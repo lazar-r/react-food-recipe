@@ -6,6 +6,7 @@
 .App {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(rgb(236, 238, 240),rgb(225, 230, 236));
+  overflow: hidden;
 }
 input[type=text] {
   font-size: 25px;
@@ -80,9 +81,7 @@ input[type=text] {
   }
   input[type=text] {
     margin: 1em 0;
-  }
-  input.search-form.search-bar {
-    min-width: 60%;
+    width: 90%;
   }
   .search-button {
     margin-bottom: 1em;
