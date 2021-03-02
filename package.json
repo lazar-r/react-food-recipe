@@ -2,7 +2,7 @@
   "name": "food-recipe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lazar-r.github.io/food-recipe/",
+  "homepage": "https://lazar-r.github.io/react-food-recipe/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
