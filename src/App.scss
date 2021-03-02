@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(rgb(236, 238, 240),rgb(225, 230, 236));
+}
+input[type=text] {
+  font-size: 25px;
+  padding: 10px;
+  margin: 20px;
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba($color: #969696, $alpha: 0.6);
+  }
+}
+
+.search-form {
+  background-image: linear-gradient(rgba(74, 75, 75, 0.685), rgba(142, 143, 145, 0.001)), url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  .search-bar {
+    min-width: 50%;
+    min-height: 50px;
+    border: none;
+    background-color: #eeebeb;
+  }
+  .search-button {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(to left, #8e2de2, #4a00e0);
+    }
+  }
+}
+.recipe-grid {
+  margin: 3em;
+  padding: 2em;
+  display: grid;
+  text-align: center;
+  grid-gap: 2em; 
+  grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
+  justify-items: center;
+  img {
+    border-radius: 50%;
+  }
+  li {
+    list-style: square;
+    text-align: left;
+    padding: .2em 0;
+    margin: 1.5em auto;
+  }
+}
+@media screen and (max-width: 659px) {
+  h1 {
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  input[type=text] {
+    margin: 1em 0;
+  }
+  input.search-form.search-bar {
+    min-width: 60%;
+  }
+  .search-button {
+    margin-bottom: 1em;
+  }
+  div.recipe-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+}

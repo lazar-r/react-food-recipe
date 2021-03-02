@@ -1,0 +1,16 @@
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 2em;
+    border-radius: 15px;
+    h1 {
+        padding-bottom: 1em;
+    }
+    img {
+        min-height: 20%;
+        padding-top: 2em;
+    }
+}
